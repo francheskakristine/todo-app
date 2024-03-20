@@ -6,8 +6,14 @@
   --BG-light: #F8F9FA;
 }
 
-body {
+
+header {
   background: linear-gradient(to right, var(--primary-lighter), var(--secondary-lighter));
+  height: 45vh;
+}
+
+body {
+  background-color: var(--BG-light);
 }
 
 .btn-primary, .btn.btn-primary:active {
