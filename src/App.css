@@ -9,7 +9,7 @@
 
 .header {
   background: linear-gradient(to right, var(--primary-lighter), var(--secondary-lighter));
-  height: 45vh;
+  height: 35vh;
 }
 
 body {
