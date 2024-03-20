@@ -9,7 +9,7 @@
 
 .header {
   background: linear-gradient(to right, var(--primary-lighter), var(--secondary-lighter));
-  height: 35vh;
+  padding-bottom: 40px;
   margin-bottom: 20px;
 }
 
