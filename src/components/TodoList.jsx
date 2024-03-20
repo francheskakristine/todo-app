@@ -5,6 +5,7 @@ import DeleteCompleted from './DeleteCompletedModal';
 import DeleteAll from './DeleteAllModal';
 import { FiSquare, FiCheckSquare } from 'react-icons/fi';
 
+
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
   const [allComplete, setAllComplete] = useState(false);
@@ -82,6 +83,7 @@ const TodoList = () => {
       <h1 className="py-3 text-center text-white">TO-DO LIST</h1>
       <div className="w-50 mx-auto mb-4 border border-light-subtle" />
       <TodoAdd onAdd={handleAddTodo} />
+    </div>
 
       <div className="container w-75">
         <div className="card">
@@ -133,7 +135,6 @@ const TodoList = () => {
           </div>
         </div>
       </div>
-    </div>
     </>
   );
 };
