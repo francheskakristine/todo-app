@@ -1,0 +1,42 @@
+:root {
+  --primary: #F4512C;
+  --primary-lighter: #FF7F4D;
+  --secondary: #5E1B89; 
+  --secondary-lighter: #9D71BC; 
+  --BG-light: #F8F9FA;
+}
+
+body {
+  background: linear-gradient(to right, var(--primary-lighter), var(--secondary-lighter));
+}
+
+.btn-primary, .btn.btn-primary:active {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--primary-lighter) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-secondary, .btn.btn-secondary:active  {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: var(--secondary-lighter) !important; 
+  border-color: var(--secondary) !important;
+}
+
+.form-control-secondary:focus {
+  border-color: #9D71BC !important;
+  box-shadow: 0 0 0 0.15rem rgba(94, 27, 137, 0.25) !important;
+}
+
+.form-control-primary:focus {
+  border-color: #FF7F4D !important;
+  box-shadow: 0 0 0 0.15rem rgba(244, 81, 44, 0.25) !important;
+}
