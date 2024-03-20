@@ -85,7 +85,7 @@ const TodoList = () => {
       <TodoAdd onAdd={handleAddTodo} />
     </div>
 
-      <div className="container w-75">
+      <div className="container w-75 mt-2">
         <div className="card">
         <div className="card-header d-flex justify-content-between align-items-center">
             <span className="text-secondary">{completedTasksCount} out of {totalTasksCount} tasks completed</span>
