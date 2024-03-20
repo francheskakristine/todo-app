@@ -10,6 +10,7 @@
 .header {
   background: linear-gradient(to right, var(--primary-lighter), var(--secondary-lighter));
   height: 35vh;
+  margin-bottom: 20px;
 }
 
 body {
