@@ -86,7 +86,8 @@ body {
 
 .todo-checkbox:checked + span::after {
   content: '\2714';
-  font-size: 12px; 
+  font-size: 12px;
+  font-weight: bold;
   color: var(--BG-light);
   display: block; 
   text-align: center; 
