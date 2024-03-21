@@ -28,6 +28,7 @@ const TodoItem = ({ todo, onEdit, onDelete, onToggle }) => {
       <div className="row align-items-center">
         <div className="col-auto">
           <input type="checkbox" className="todo-checkbox" checked={todo.completed} onChange={onToggle} />
+          <span></span>
         </div>
 
         {editMode ? (
@@ -52,7 +53,7 @@ const TodoItem = ({ todo, onEdit, onDelete, onToggle }) => {
         )}
 
         <div className="col">
-          <p className="todo-creation-time">Created at: {new Date(todo.createdAt).toLocaleString()}</p>
+          <span className="todo-creation-time">Created at: {new Date(todo.createdAt).toLocaleString()}</span>
         </div>
         <div className="col-auto d-flex gap-2">
           <button className="btn btn-primary" onClick={handleEdit}><FiEdit /></button>
