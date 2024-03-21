@@ -4,6 +4,8 @@
   --secondary: #5E1B89; 
   --secondary-lighter: #9D71BC; 
   --BG-light: #F8F9FA;
+  --text-default: #616161;
+  --text-strikethrough: #A9A9A9;
 }
 
 
@@ -46,4 +48,51 @@ body {
 .form-control-primary:focus {
   border-color: #FF7F4D !important;
   box-shadow: 0 0 0 0.15rem rgba(244, 81, 44, 0.25) !important;
+}
+
+.todo-completed {
+  text-decoration: line-through;
+  color: var(--text-strikethrough);
+  text-decoration-color: var(--text-strikethrough);
+}
+
+.todo-incompleted {
+ font-size: 18px;
+ color: var(--text-default);
+}
+
+.todo-creation-time {
+  color: var(--text-default);
+}
+
+.todo-checkbox {
+  display: none;
+}
+
+.todo-checkbox {
+  width: 16px;
+  height: 16px;
+  background-color: var(--BG-light);
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  cursor: pointer; 
+  display: inline-block;
+}
+
+.todo-checkbox:checked {
+  background-color: var(--secondary);
+  border-color: var(--secondary); 
+}
+
+.todo-checkbox:checked::after {
+  content: '\2713';
+  font-size: 12px; 
+  color: var(--BG-light);
+  display: block; 
+  text-align: center; 
+  line-height: 16px; 
+}
+
+.todo-checkbox:hover {
+  background-color: var(--secondary-lighter);
 }

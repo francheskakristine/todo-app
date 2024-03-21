@@ -27,7 +27,7 @@ const TodoItem = ({ todo, onEdit, onDelete, onToggle }) => {
     <li className={todo.completed ? 'list-group-item completed' : 'list-group-item'}>
       <div className="row align-items-center">
         <div className="col-auto">
-          <input type="checkbox" checked={todo.completed} onChange={onToggle} />
+          <input type="checkbox" className="todo-checkbox" checked={todo.completed} onChange={onToggle} />
         </div>
 
         {editMode ? (
@@ -47,12 +47,12 @@ const TodoItem = ({ todo, onEdit, onDelete, onToggle }) => {
           </form>
         ) : (
           <div className="col">
-            <span className={todo.completed ? 'text-decoration-line-through text-muted' : ''}>{todo.text}</span>
+            <span className={`todo-text ${todo.completed ? 'todo-completed' : 'todo-incomplete'}`}>{todo.text}</span>
           </div>
         )}
 
         <div className="col">
-          <small>Created at: {new Date(todo.createdAt).toLocaleString()}</small>
+          <p className="todo-creation-time">Created at: {new Date(todo.createdAt).toLocaleString()}</p>
         </div>
         <div className="col-auto d-flex gap-2">
           <button className="btn btn-primary" onClick={handleEdit}><FiEdit /></button>
