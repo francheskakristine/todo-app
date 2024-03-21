@@ -51,13 +51,14 @@ body {
 }
 
 .todo-completed {
+  font-size: 20px;
   text-decoration: line-through;
   color: var(--text-strikethrough);
   text-decoration-color: var(--text-strikethrough);
 }
 
 .todo-incomplete {
- font-size: 22px;
+ font-size: 20px;
  color: var(--text-default);
 }
 
@@ -87,8 +88,7 @@ body {
 .todo-checkbox:checked + span::after {
   content: '\2714';
   font-size: 12px;
-  font-weight: bold;
-  color: var(--BG-light);
+  color: white;
   display: block; 
   text-align: center; 
   line-height: 16px; 
