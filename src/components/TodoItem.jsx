@@ -27,8 +27,8 @@ const TodoItem = ({ todo, onEdit, onDelete, onToggle }) => {
     <li className={todo.completed ? 'list-group-item completed' : 'list-group-item'}>
       <div className="row align-items-center">
         <div className="col-auto">
-          <input type="checkbox" className="todo-checkbox" checked={todo.completed} onChange={onToggle} />
-          <span></span>
+          <input type="checkbox" className="todo-checkbox" checked={todo.completed} />
+          <span onClick={onToggle}></span>
         </div>
 
         {editMode ? (
