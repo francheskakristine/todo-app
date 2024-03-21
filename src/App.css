@@ -58,7 +58,7 @@ body {
 }
 
 .todo-incomplete {
- font-size: 20px;
+ font-size: 18px;
  color: var(--text-default);
 }
 
@@ -86,9 +86,9 @@ body {
 }
 
 .todo-checkbox:checked + span::after {
-  content: '\2714';
+  content: '\2713';
   font-size: 12px;
-  color: white;
+  color: white !important;
   display: block; 
   text-align: center; 
   line-height: 16px; 
